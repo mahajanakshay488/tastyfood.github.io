@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.3.8/css/swiper.min.css">
+   
+
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.3.8/js/swiper.min.js" integrity="sha256-MbmmRTDKmXtrzBXtkzpnesuGWf09dcb1RzZle79pwY4=" crossorigin="anonymous"></script>
+
+  <style>
+ 
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 50px;
+}
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 500px;
+
+}
+
+  </style>
+
+
+
+
+</head>
+<body>
+
+  <div id="navbar">
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+    <div id="main">
+      <button class="openbtn" onclick="openNav()">☰</button>  
+    </div>
+    <a class="navelem" href="#">My Food</a>
+    <a class="navelem" href="#">Mail</a>
+
+  </div>
+
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image:url('https://www.w3schools.com/w3images/steak.jpg')">
+      
+        <div class="overlay">
+          <div class="title">
+            <p class="pt">The Perfect Sandwich, A Real NYC Classic</p>
+            <p class="pp">Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide" style="background-image:url('https://www.w3schools.com/w3images/cherries.jpg')">
+        <div class="overlay">
+          <div class="title">
+            <p class="pt">Cherries, interrupted</p>
+            <p class="pp">Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide" style="background-image:url('https://www.w3schools.com/w3images/wine.jpg')">
+        <div class="overlay">
+          <div class="title">
+            <p class="pt">Once Again, Robust Wine and Vegetable Pasta</p>
+            <p class="pp">Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide" style="background-image:url('https://www.w3schools.com/w3images/popsicle.jpg')">
+        <div class="overlay">
+          <div class="title">
+            <p class="pt">All I Need Is a Popsicle</p>
+            <p class="pp">Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide" style="background-image:url('https://www.w3schools.com/w3images/salmon.jpg')">
+        <div class="overlay">
+          <div class="title">
+            <p class="pt">Salmon For Your Skin</p>
+            <p class="pp">Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide" style="background-image:url(https://www.w3schools.com/w3images/sandwich.jpg)">
+        <div class="overlay">
+          <div class="title">
+            <p class="pt">dilessios breakfast</p>
+            <p class="pp">Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+ <div class="linediv">
+   <div class="line"></div>
+ </div>
+
+ <div id="aboutmen">
+   <p class="pt">About Me, The Food Man</p>
+   <img src="https://www.w3schools.com/w3images/chef.jpg" alt="" srcset="">
+   <h3>I am Who I Am!</h3>
+   <p style="font-style: italic;">With Passion For Real, Good Food</p>
+   <p style="width: 70%; text-align: center;">Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+ </div>
+
+<div class="linediv">
+  <div class="line"></div>
+</div>
+
+<footer>
+  <p>design by Akshay.</p>
+</footer>
+  
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.3.8/js/swiper.min.js" integrity="sha256-MbmmRTDKmXtrzBXtkzpnesuGWf09dcb1RzZle79pwY4=" crossorigin="anonymous"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slideShadows: 'auto',
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 300,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+
+
+    function openNav() {
+  document.getElementById("mySidebar").style.width = "300px";
+  document.getElementById("main").style.marginLeft = "0px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+  </script>
+
+</body>
+</html>
